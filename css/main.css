@@ -1,0 +1,11 @@
+@import "blog-post.css" screen;
+@import "media-small.css" screen;
+@import "media-large.css" screen;
+* {
+    margin: 0 auto;
+}
+#container{
+    background-color: aqua;
+    width: 200px;
+    height:500px;
+}
