@@ -1,11 +1,38 @@
 @import "blog-post.css" screen;
 @import "media-small.css" screen;
 @import "media-large.css" screen;
-* {
-    margin: 0 auto;
-}
+
 #container{
     background-color: aqua;
-    width: 200px;
-    height:500px;
+    display: grid;
+    width: 100%;
+    grid-template-columns:  25%vw 25%vw 25%vw 25%vw;
+    grid-template-rows: 25vh 60vh 15vh;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "head head head head" 
+    "side main main main"
+    "foot foot foot foot";
+}
+.box{
+    display: flex;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
+#head{
+  grid-area: head;    
+background-color: coral;
+}
+#side-bar{
+    grid-area: side; 
+    background-color: coral;
+}
+#main{
+    grid-area: main; 
+    background-color: coral;
+}
+#foot{
+    grid-area: foot; 
+    background-color: coral;
 }
